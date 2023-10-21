@@ -14,6 +14,7 @@ public class AlunoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
+    @Schema(hidden = true)
     private Integer idAluno;
 
     private String nomeAluno;
