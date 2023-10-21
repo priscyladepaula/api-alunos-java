@@ -35,7 +35,7 @@ public class AlunoController {
         return ResponseEntity.status(HttpStatus.OK).body(task);
     }
     
-    @GetMapping("/")
+    @GetMapping("/all/")
     public ResponseEntity<?> list() {
 
         var alunos = this.alunoRepository.findAll();
